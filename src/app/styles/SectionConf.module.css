@@ -1,0 +1,103 @@
+.trustSection {
+  background-color: var(--color-background-light);
+  padding: 60px 0;
+}
+
+.container {
+  display: flex;
+  flex-direction: column;
+  gap: 40px;
+}
+
+.textContent {
+  text-align: center;
+}
+
+/*.imageCollage {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 15px;
+  max-width: 500px;
+  margin: 0 auto;
+}*/
+
+/*.imageCollage img {
+  width: 100%;
+  height: auto;
+  border-radius: 8px;
+  box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1);
+}*/
+.imageContainer {
+  width: 100%;
+  max-width: 450px;
+  margin: 0 auto;
+  aspect-ratio: 1 / 1;
+  background-size: cover;
+  background-position: center;
+  -webkit-mask-image: url('../../../public/imagens/livaLogoTeste.png');
+  mask-image: url('../../../public/imagens/livaLogoTeste.png');
+  -webkit-mask-size: contain;
+  mask-size: contain;
+  -webkit-mask-repeat: no-repeat;
+  mask-repeat: no-repeat;
+  -webkit-mask-position: center;
+  mask-position: center;
+}
+
+.title {
+  font-size: 2rem;
+  font-weight: 700;
+  margin-bottom: 1rem;
+}
+
+.description {
+  font-size: 1rem;
+  line-height: 1.7;
+  color: var(--color-text-gray);
+  margin-bottom: 2rem;
+}
+
+.ctaButton {
+  background-color: transparent;
+  color: var(--color-primary);
+  border: 2px solid var(--color-primary);
+  padding: 12px 30px;
+  border-radius: 5px;
+  font-weight: 600;
+  cursor: pointer;
+  font-size: 1rem;
+  transition: all 0.3s ease;
+}
+
+.ctaButton:hover {
+  background-color: var(--color-primary);
+  color: var(--color-text-light);
+}
+
+@media (min-width: 992px) {
+  .trustSection {
+    padding: 100px 0;
+  }
+
+  .container {
+    flex-direction: row;
+    align-items: center;
+    gap: 60px;
+  }
+
+  .imageContainer,
+  .textContent {
+    flex: 1; 
+  }
+  .imageContainer {
+      margin: 0;
+  }
+
+  .textContent {
+    text-align: left;
+  }
+
+  .title {
+    font-size: 2.5rem;
+  }
+}
