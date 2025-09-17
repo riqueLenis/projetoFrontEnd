@@ -1,4 +1,4 @@
-# Desafio Frontend - Landing Page Liva Empreendimentos
+# Landing Page Liva Empreendimentos
 
 Réplica fiel da landing page da Liva, desenvolvida por Henrique Lenis.
 
